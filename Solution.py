@@ -35,3 +35,12 @@ if 'column_name' in data.columns:
     plt.ylabel('Frequency')
     plt.show()
 
+
+# Scatter plot of two numeric columns (replace 'x_column' and 'y_column')
+if {'x_column', 'y_column'}.issubset(data.columns):
+    plt.figure(figsize=(8, 6))
+    plt.scatter(data['x_column'], data['y_column'], alpha=0.7, color='green')
+    plt.title('Scatter Plot of X vs Y')
+    plt.xlabel('X Column')
+    plt.ylabel('Y Column')
+    plt.show()
