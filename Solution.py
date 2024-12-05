@@ -24,3 +24,14 @@ print(data.isnull().sum())
 if not data.select_dtypes(include='number').empty:
     print("\nCorrelation Matrix:")
     print(data.corr())
+    
+# Step 4: Visualizations
+# Histogram of a numeric column (replace 'column_name' with an actual column)
+if 'column_name' in data.columns:
+    plt.figure(figsize=(8, 6))
+    data['column_name'].hist(bins=20, color='skyblue', edgecolor='black')
+    plt.title('Histogram of Column Name')
+    plt.xlabel('Column Name')
+    plt.ylabel('Frequency')
+    plt.show()
+
