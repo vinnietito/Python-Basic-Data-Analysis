@@ -44,3 +44,13 @@ if {'x_column', 'y_column'}.issubset(data.columns):
     plt.xlabel('X Column')
     plt.ylabel('Y Column')
     plt.show()
+
+
+# Bar plot of a categorical column (replace 'categorical_column')
+if 'categorical_column' in data.columns:
+    plt.figure(figsize=(10, 6))
+    data['categorical_column'].value_counts().plot(kind='bar', color='orange', edgecolor='black')
+    plt.title('Bar Plot of Categorical Column')
+    plt.xlabel('Categories')
+    plt.ylabel('Count')
+    plt.show()
