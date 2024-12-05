@@ -54,3 +54,10 @@ if 'categorical_column' in data.columns:
     plt.xlabel('Categories')
     plt.ylabel('Count')
     plt.show()
+    
+
+# Step 5: Findings or Observations
+# Print any insights you notice in the dataset or visualizations
+print("\nObservations:")
+print("1. Add your observations here.")
+print("2. Replace this text with meaningful insights.")
