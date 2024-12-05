@@ -18,3 +18,9 @@ print(data.describe())
 
 print("\nMissing Values:")
 print(data.isnull().sum())
+
+# Step 3: Basic Data Analysis
+# Example: Correlation between numerical columns (if applicable)
+if not data.select_dtypes(include='number').empty:
+    print("\nCorrelation Matrix:")
+    print(data.corr())
