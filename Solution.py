@@ -6,7 +6,7 @@ import seaborn as sns
 # Task 1: Load and Explore the Dataset
 try:
     # Replace with your dataset file path
-    data_file = 'iris.csv'  # Example dataset, replace with your own
+    data_file = r"C:\Users\user\Documents\sample_data.csv"
     data = pd.read_csv(data_file)
     print("\nDataset successfully loaded.")
 except FileNotFoundError:
